@@ -16,7 +16,7 @@ if(isset($_POST['message'])){
 
 	$status = mail($to, $subject, $message, $headers);
 
-	if($status == TRUE){	
+	if($status){	
 		$res['sendstatus'] = 'done';
 	
 		//Edit your message here

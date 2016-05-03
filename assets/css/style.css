@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,700,800);
-@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
 
 /*!
  * Clean v2.0.0
@@ -7,6 +7,22 @@
  * Copyright 2015 Script Eden
  * Licensed under MIT
 */
+
+.boaz-desc {
+	height:0;
+	opacity: 0;
+}
+.boaz-title:hover {
+	transition: 0.7s all ease;
+	box-shadow: inset 2px 4px 20px -2px rgba(128,128,128,1);
+}
+
+.boaz-title:hover >* .boaz-desc{
+	opacity: 1;
+	transition: 0.7s all ease;
+	height:100%;
+}
+
 
 body {
 	font: 300 14px/1.8 'Raleway', sans-serif;
@@ -554,7 +570,7 @@ textarea.form-control {
 .navbar-custom .navbar-brand {
 	font-weight: 700;
 	font-size: 22px;
-    font-family: Lobster, cursive;
+    font-family: Inconsolata, monospace;
 }
 
 .navbar-custom .dropdown-menu {
