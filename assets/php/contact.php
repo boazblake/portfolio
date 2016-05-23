@@ -23,7 +23,7 @@ if(isset($_POST['message'])){
 		$res['message'] = 'Form Submission Successful';
     }
 	else{
-		$res['message'] = 'Failed to send mail. Please mail me to boazblake@gmail.com';
+		$res['message'] = 'Failed to send mail. Please email me to boazblake@gmail.com';
 	}
 	
 	
